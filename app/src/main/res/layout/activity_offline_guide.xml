@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1B5E20"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvGuideTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🇱🇰 හදිසි උපදෙස්"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline Emergency Guide"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Emergency Tip -->
+    <TextView
+        android:id="@+id/tvEmergencyTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 උපදෙස්: ඔබගේ ජංගම දුරකථනය සැමවිටම පූර්ණ බැටරියක් සහිතව තබාගන්න"
+        android:textSize="13sp"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#E8F5E9"
+        android:layout_marginTop="4dp" />
+
+    <!-- Expandable List -->
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="4dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🌐 මෙට් දෙපාර්ත."
+            android:textSize="12sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:onClick="openMeteoWebsite"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📡 DMC වෙබ් අඩවිය"
+            android:textSize="12sp"
+            android:backgroundTint="#FF6F00"
+            android:textColor="#FFFFFF"
+            android:onClick="openDmcWebsite"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📤 බෙදාගන්න"
+            android:textSize="12sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:onClick="shareGuide"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🎥 පළමු ආධාර වීඩියෝ"
+            android:textSize="12sp"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:onClick="showFirstAidVideo"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🖨️ මුද්‍රණය"
+            android:textSize="12sp"
+            android:backgroundTint="#607D8B"
+            android:textColor="#FFFFFF"
+            android:onClick="printGuide"
+            android:layout_marginEnd="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="← පෙර පිටුවට"
+            android:textSize="12sp"
+            android:backgroundTint="#666666"
+            android:textColor="#FFFFFF"
+            android:onClick="goBack"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Footer Note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="මෙම උපදෙස් ජාල සම්බන්ධතාවයකින් තොරව ක්‍රියාත්මක වේ. නවතම තොරතුරු සඳහා DMC හෝ මෙට් දෙපාර්තමේන්තුව සම්බන්ධ කරගන්න."
+        android:textSize="10sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#FFF3E0" />
+
+</LinearLayout>

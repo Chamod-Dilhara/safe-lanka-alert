@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#fff8e1">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvGuideTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📖 Emergency Guide"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1a237e"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="හදිසි උපදෙස්"
+        android:textSize="16sp"
+        android:textColor="#5d4037"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Guide List -->
+    <ListView
+        android:id="@+id/guideList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#e0e0e0"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

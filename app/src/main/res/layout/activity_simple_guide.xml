@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvSimpleGuideTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Guide"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="හදිසි උපදෙස්"
+        android:textSize="18sp"
+        android:textColor="#388E3C"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Guide Buttons -->
+    <Button
+        android:id="@+id/btnFloodGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌊 Flood Safety"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnLandslideGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⛰️ Landslide Safety"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#795548"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnFirstAid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🩺 First Aid Basics"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnEmergencyContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📞 Emergency Contacts"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Back to Main Menu"
+        android:backgroundTint="#757575"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lk.safe.alert">
+
+    <!-- ESSENTIAL PERMISSIONS -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- For Android 13+ notifications (optional) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Safe Lanka Alert"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+
+        <!-- MAIN ACTIVITY (Home Screen) - ONLY ONE LAUNCHER ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Safe Lanka Alert"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- CHECKLIST ACTIVITY -->
+        <activity
+            android:name=".ChecklistActivity"
+            android:exported="false"
+            android:label="Emergency Checklist"
+            android:screenOrientation="portrait" />
+
+        <!-- SIMPLE GUIDE ACTIVITY -->
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false"
+            android:label="Emergency Guide"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SOSActivity"
+            android:exported="false"
+            android:label="Emergency SOS"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

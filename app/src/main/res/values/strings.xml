@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Safe Lanka Alert</string>
+    <string name="app_name_sinhala">දිරිය ඇලර්ට්</string>
+    <string name="asset_statements">[{
+        \"relation\": [\"delegate_permission/common.handle_all_urls\"],
+        \"target\": {
+          \"namespace\": \"web\",
+          \"site\": \"https://safelanka.lk\"}
+    }]</string>
+
+    <!-- Permissions rationale -->
+    <string name="sms_permission_rationale">
+        We need SMS permission to send "I\'m Safe" messages to your emergency contacts.
+    </string>
+    <string name="location_permission_rationale">
+        We need location permission to show alerts specific to your district and find nearest safe locations.
+    </string>
+    <string name="notification_permission_rationale">
+        We need notification permission to alert you about floods and landslides even when the app is closed.
+    </string>
+</resources>
